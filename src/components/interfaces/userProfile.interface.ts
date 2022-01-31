@@ -11,6 +11,12 @@ export interface UserProfileProps {
 	following: number,
 }
 
+export interface UsersProps {
+	users?: UserProfileProps[],
+	getUsers: (searchValue: string) => void,
+	setCurrentProfile: (u: UserProfileProps) => void
+}
+
 export interface UsersItemsProps {
 	users?: UserProfileProps[],
 	setCurrentProfile: (u: UserProfileProps) => void

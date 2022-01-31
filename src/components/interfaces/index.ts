@@ -1,3 +1,3 @@
-export type { DataPropsRepos, NewObjectProps } from './userRepos.interface';
-export type { UserProfileProps }               from './userProfile.interface';
-export type { UserInfoProps }                  from './userProfile.interface';
+export type { DataPropsRepos, NewObjectProps }              from './userRepos.interface';
+export type { UserProfileProps, UserInfoProps, UsersProps } from './userProfile.interface';
+

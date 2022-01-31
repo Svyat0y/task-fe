@@ -33,6 +33,5 @@ export const destructRepos = (({ items }: DataPropsRepos): NewObjectProps[] => {
 		};
 		arr.push(newObject);
 	});
-
 	return arr;
 });

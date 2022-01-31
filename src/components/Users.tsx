@@ -1,13 +1,7 @@
 import { ChangeEvent, useEffect, useState } from 'react';
 import { UserItems }                        from './index';
-import { UserProfileProps }                 from './interfaces';
+import { UsersProps }                       from './interfaces';
 
-
-interface UsersProps {
-	users?: UserProfileProps[],
-	getUsers: (searchValue: string) => void,
-	setCurrentProfile: (u: UserProfileProps) => void
-}
 
 const Users = ({ users, getUsers, setCurrentProfile }: UsersProps): JSX.Element => {
 	const [ searchValue, setSearchValue ] = useState<string>('');
