@@ -1,11 +1,13 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
-import { searchUserRepos }                         from '../api';
-import { NewObjectProps, UserInfoProps }           from './interfaces';
+
+import { searchUserRepos }   from '../../api';
+import { UserInfoProps }     from './UserInfo.props';
+import { CurrentReposProps } from '../interfaces';
 
 
 const UserInfo = ({ currentProfile }: UserInfoProps): JSX.Element => {
 
-	const [ currentRepos, setCurrentRepos ] = useState<NewObjectProps[]>();
+	const [ currentRepos, setCurrentRepos ] = useState<CurrentReposProps[]>();
 	const [ searchValue, setSearchValue ] = useState<string>('');
 
 	useEffect(() => {

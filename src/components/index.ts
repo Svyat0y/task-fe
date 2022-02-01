@@ -1,6 +1,6 @@
-import Users     from './Users';
-import UserInfo  from './UserInfo';
-import UserItems from './UserItems';
+import Users     from './Users/Users';
+import UserInfo  from './UserInfo/UserInfo';
+import UserItems from './UserItems/UserItems';
 
 
 export {

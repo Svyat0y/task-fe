@@ -1,8 +1,8 @@
 export interface DataPropsRepos {
-	items: NewObjectProps[]
+	items: CurrentReposProps[]
 }
 
-export interface NewObjectProps {
+export interface CurrentReposProps {
 	id: number,
 	name: string,
 	forks: number,

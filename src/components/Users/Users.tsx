@@ -1,6 +1,7 @@
 import { ChangeEvent, useEffect, useState } from 'react';
-import { UserItems }                        from './index';
-import { UsersProps }                       from './interfaces';
+
+import { UserItems }  from '../index';
+import { UsersProps } from './Users.props';
 
 
 const Users = ({ users, getUsers, setCurrentProfile }: UsersProps): JSX.Element => {

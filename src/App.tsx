@@ -1,6 +1,7 @@
-import { Route, Routes }    from 'react-router-dom';
-import { UserInfo, Users }  from './components';
-import { useState }         from 'react';
+import { Route, Routes }   from 'react-router-dom';
+import { UserInfo, Users } from './components';
+import { useState }        from 'react';
+
 import { fetchUsers }       from './api';
 import { UserProfileProps } from './components/interfaces';
 

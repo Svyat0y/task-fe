@@ -1,4 +1,4 @@
-import { DataPropsRepos, NewObjectProps, UserProfileProps } from '../components/interfaces';
+import { DataPropsRepos, CurrentReposProps, UserProfileProps } from '../components/interfaces';
 
 
 export const destructUserProfile = ((object: UserProfileProps): UserProfileProps | undefined => {
@@ -21,10 +21,10 @@ export const destructUserProfile = ((object: UserProfileProps): UserProfileProps
 });
 
 
-export const destructRepos = (({ items }: DataPropsRepos): NewObjectProps[] => {
-	const arr: Array<NewObjectProps> = [];
+export const destructRepos = (({ items }: DataPropsRepos): CurrentReposProps[] => {
+	const arr: Array<CurrentReposProps> = [];
 
-	items.map((item: NewObjectProps) => {
+	items.map((item: CurrentReposProps) => {
 		const newObject = {
 			id: item.id,
 			name: item.name,
